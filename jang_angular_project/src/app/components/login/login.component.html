@@ -1,1 +1,14 @@
-<p>login works!</p>
+<div class="container">
+<form  class="add-form" (ngSubmit)="onSubmit()">
+    <h1 [ngStyle]="{'text-align': 'center'}">LOGIN</h1>
+    <div class="form-control">
+        <label for="text">Username</label>
+        <input type="text"  name="username" [(ngModel)]="username" id="text" placeholder="Username">
+    </div>
+    <div class="form-control">
+        <label for="day">Password</label>
+        <input type="password" name="day" [(ngModel)]="password" id="day" placeholder="Password">
+    </div>
+    <input type="submit" value="Login" class="btn btn-block">
+</form> 
+</div>

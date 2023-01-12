@@ -1,7 +1,14 @@
-<div>
-    <tabset>
-      <tab heading="Basic title" id="tab1">Basic content</tab>
-      <tab heading="Basic Title 1">Basic content 1</tab>
-      <tab heading="Basic Title 2">Basic content 2</tab>
-    </tabset>
-  </div>
+<nav class="navbar navbar-light bg-light">
+  <button type="button" class="btn btn-secandary" (click)="isCollapsed = !isCollapsed"
+        [attr.aria-expanded]="!isCollapsed" aria-controls="collapseBasic"><span class="navbar-toggler-icon"></span>
+</button>
+<a class="navbar-brand" href="#">Jang</a>
+<a class="btn btn-secandary" href="#">Logout</a>
+</nav>
+<br>
+<div id="collapseBasic" [collapse]="isCollapsed">
+  <div class="well well-lg card card-block card-header"><a class="btn btn-secandary" href="#">Home</a></div>
+  <div class="well well-lg card card-block card-header"><a class="btn btn-secandary" href="#">Items</a></div>
+  <div class="well well-lg card card-block card-header"><a class="btn btn-secandary" href="#">Contact</a></div>
+  <div class="well well-lg card card-block card-header"><a class="btn btn-secandary" href="#">About Us</a></div>
+</div>
