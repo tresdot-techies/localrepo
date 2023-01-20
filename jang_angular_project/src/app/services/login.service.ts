@@ -15,7 +15,7 @@ const httpOptions = {
 })
 export class LoginService {
 
-  private apiUrl = "http://localhost/codeigniter_angular_backend/login_auth";
+  private apiUrl = "http://172.16.96.140/codeigniter_angular_backend/login_auth";
   
   constructor(private http:HttpClient) { }
   

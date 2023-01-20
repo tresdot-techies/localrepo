@@ -3,7 +3,7 @@
         [attr.aria-expanded]="!isCollapsed" aria-controls="collapseBasic"><span class="navbar-toggler-icon"></span>
 </button>
 <a class="navbar-brand" href="#">Jang</a>
-<a class="btn btn-secandary" href="#">Logout</a>
+<a class="btn btn-secandary" (click)="delete_token()" >Logout</a>
 </nav>
 <br>
 <div id="collapseBasic" [collapse]="isCollapsed">
